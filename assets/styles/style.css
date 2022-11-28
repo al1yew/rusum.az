@@ -116,6 +116,7 @@ input::-webkit-inner-spin-button {
   }
   #main .all .form .inpkeeper select {
     font-size: 14px !important;
+    -webkit-appearance: none;
   }
   #main .all .form .inpkeeper input[type="number"] {
     font-size: 14px !important;
