@@ -10,12 +10,14 @@ $(document).ready(function () {
         let price = formData.get('price');
         let volume = formData.get('volume');
         let source = formData.get('source');
+        let date = formData.get('date');
 
         console.log(autoType);
         console.log(engineType);
         console.log(price);
         console.log(volume);
         console.log(source);
+        console.log(date);
 
         // formData.forEach(element => {
         //     console.log(element)

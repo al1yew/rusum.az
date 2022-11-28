@@ -474,7 +474,8 @@ input::-webkit-inner-spin-button {
                     cursor: pointer;
                 }
 
-                input[type="number"] {
+                input[type="number"],
+                input[type="date"] {
                     border: 0.5px solid grey;
                     border-radius: 5px;
                     outline: none;
