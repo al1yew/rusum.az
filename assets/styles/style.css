@@ -66,13 +66,13 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 576px) {
   #header {
-    font-size: 12px !important;
+    font-size: 13px !important;
   }
   #main {
     margin-top: 0px !important;
   }
   #main .all {
-    padding-top: 75px !important;
+    padding-top: 50px !important;
   }
   #main .all .headp {
     font-size: 18px !important;
@@ -526,15 +526,12 @@ input::-webkit-inner-spin-button {
   color: black;
   margin: 0;
   padding: 0;
-  padding: 5px 0;
+  padding: 7px 0;
 }
 
 #header .all div {
   margin: 0;
   padding: 0;
-}
-
-#header .all .neseqoyariqheader {
   text-align: center;
 }
 
@@ -554,7 +551,7 @@ input::-webkit-inner-spin-button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 100px;
+  padding-top: 70px;
   margin: 0;
 }
 
