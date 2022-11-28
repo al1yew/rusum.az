@@ -7,13 +7,15 @@ $(document).ready(function () {
 
         let autoType = formData.get('autoType');
         let engineType = formData.get('engineType');
-        let volume = formData.get('volume');
         let price = formData.get('price');
+        let volume = formData.get('volume');
+        let source = formData.get('source');
 
         console.log(autoType);
         console.log(engineType);
-        console.log(volume);
         console.log(price);
+        console.log(volume);
+        console.log(source);
 
         // formData.forEach(element => {
         //     console.log(element)

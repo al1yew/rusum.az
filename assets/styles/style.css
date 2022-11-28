@@ -68,6 +68,54 @@ input::-webkit-inner-spin-button {
   #header {
     font-size: 12px !important;
   }
+  #main .all .headp {
+    font-size: 18px !important;
+  }
+  #main .all .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-family: var(--robotomedium);
+    padding: 20px;
+    background-color: white;
+    border: 0.8px solid #a3a3a3;
+    border-radius: 10px;
+  }
+  #main .all .form p {
+    margin-bottom: 4px;
+  }
+  #main .all .form .inpkeeper {
+    font-size: 14px !important;
+  }
+  #main .all .form .inpkeeper label {
+    font-size: 14px !important;
+  }
+  #main .all .form .inpkeeper .biglabel {
+    margin-bottom: 10px !important;
+  }
+  #main .all .form .inpkeeper input[type="radio"] {
+    display: none;
+  }
+  #main .all .form .inpkeeper .inplabelkeeper {
+    font-size: 14px !important;
+  }
+  #main .all .form .inpkeeper select {
+    font-size: 14px !important;
+  }
+  #main .all .form .inpkeeper input[type="number"] {
+    font-size: 14px !important;
+  }
+  #main .all .form button {
+    font-size: 14px !important;
+  }
 }
 
 .col-1 {
@@ -544,11 +592,20 @@ input::-webkit-inner-spin-button {
       flex-wrap: wrap;
 }
 
+#main .all .form .inpkeeper p {
+  margin-bottom: 4px;
+}
+
 #main .all .form .inpkeeper label {
   font-family: var(--robotolight);
   cursor: pointer;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  margin-bottom: 4px;
+}
+
+#main .all .form .inpkeeper .biglabel {
+  margin-bottom: 12px;
 }
 
 #main .all .form .inpkeeper input[type="radio"] {
@@ -566,7 +623,7 @@ input::-webkit-inner-spin-button {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  padding: 4px 0;
+  padding: 4px 5px;
   border: 0.5px solid grey;
   border-radius: 5px;
   cursor: pointer;
@@ -587,5 +644,33 @@ input::-webkit-inner-spin-button {
 #main .all .form .inpkeeper .isselected {
   background-color: green;
   color: white;
+}
+
+#main .all .form .inpkeeper select {
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#main .all .form .inpkeeper input[type="number"] {
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  outline: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+#main .all .form button {
+  margin-top: 15px;
+  background-color: green;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  color: white;
+}
+
+#main .all .form button:hover {
+  background-color: #006100;
 }
 /*# sourceMappingURL=style.css.map */

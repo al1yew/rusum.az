@@ -45,6 +45,7 @@
                     <p class="col-lg-12 col-12 headp">
                         Nəqliyyat vasitəsinin məlumatları
                     </p>
+
                     <div class="col-lg-12 col-12 inpkeeper">
                         <p class="col-lg-12 col-12">Nəqliyyat vasitəsinin növü:</p>
 
@@ -82,15 +83,36 @@
                         <input type="number" class="col-lg-12 col-12" name="volume">
                     </div>
 
-                    <div class="col-lg-5-8 col-5-8 inpkeeper">
-                        <p class="col-lg-12 col-12">Mühərrikin həcmi (sm&sup3;):</p>
-                        <input type="number" class="col-lg-12 col-12" name="volume">
+                    <div class="col-lg-12 col-12 inpkeeper">
+                        <p class="col-lg-12 col-12">Istehsal tarixi:</p>
+
+                        <label for="more" class="col-lg-5-8 col-5-8 inplabelkeeper isselected">
+                            <span>1 ildən artıq</span>
+                            <input type="radio" checked id="more" name="date" value="more">
+                        </label>
+
+                        <label for="less" class="col-lg-5-8 col-5-8 inplabelkeeper">
+                            <span>1 ildən az</span>
+                            <input type="radio" id="less" name="date" value="less">
+                        </label>
                     </div>
 
-                    <button type="submit" form="mainForm">Hesabla</button>
+                    <div class="col-lg-12 col-12 inpkeeper">
+                        <p class="col-lg-12 col-12">Mənşə (istehsal) ölkəsi və göndərən ölkə haqqında:</p>
+
+                        <label for="another" class="col-lg-12 col-12 inplabelkeeper isselected biglabel">
+                            <span>Digər ölkələr</span>
+                            <input type="radio" checked id="another" name="source" value="another">
+                        </label>
+
+                        <label for="contract" class="col-lg-12 col-12 inplabelkeeper">
+                            <span>Azad ticarət sazişi bağlanan ölkədə istehsal olunub və oradan gətirilir</span>
+                            <input type="radio" id="contract" name="source" value="contract">
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn" form="mainForm">Hesabla</button>
                 </form>
-
-
 
                 <div class="col-lg-6 col-12">
                     results

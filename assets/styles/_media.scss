@@ -8,4 +8,60 @@
     #header {
         font-size: 12px !important;
     }
+
+    #main {
+        .all {
+            .headp {
+                font-size: 18px !important;
+            }
+
+            .form {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                font-family: var(--robotomedium);
+                padding: 20px;
+                background-color: white;
+                border: 0.8px solid rgb(163, 163, 163);
+                border-radius: 10px;
+
+                p {
+                    margin-bottom: 4px;
+                }
+
+                .inpkeeper {
+                    font-size: 14px !important;
+
+                    label {
+                        font-size: 14px !important;
+                    }
+
+                    .biglabel {
+                        margin-bottom: 10px !important;
+                    }
+
+                    input[type="radio"] {
+                        display: none;
+                    }
+
+                    .inplabelkeeper {
+                        font-size: 14px !important;
+                    }
+
+                    select {
+                        font-size: 14px !important;
+                    }
+
+                    input[type="number"] {
+                        font-size: 14px !important;
+                    }
+                }
+
+                button {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
 }
