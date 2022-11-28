@@ -10,35 +10,45 @@
     }
 
     #main {
+        margin-top: 0px !important;
+
         .all {
+            padding-top: 60px !important;
+
             .headp {
                 font-size: 18px !important;
             }
 
             .form {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
-                font-family: var(--robotomedium);
-                padding: 20px;
-                background-color: white;
-                border: 0.8px solid rgb(163, 163, 163);
-                border-radius: 10px;
+                padding: 10px !important;
 
-                p {
-                    margin-bottom: 4px;
+                .description {
+                    font-size: 14px !important;
+                    margin-top: 44px !important;
+                    padding: 3.7px 0 !important;
+
+                    .openDesc {
+                        font-size: 12px !important;
+                    }
                 }
 
                 .inpkeeper {
-                    font-size: 14px !important;
+                    font-size: 13px !important;
+
+                    p {
+                        font-size: 13px !important;
+                    }
 
                     label {
-                        font-size: 14px !important;
+                        font-size: 13px !important;
                     }
 
                     .biglabel {
                         margin-bottom: 10px !important;
+                    }
+
+                    .nextbiglabel {
+                        text-align: center;
                     }
 
                     input[type="radio"] {

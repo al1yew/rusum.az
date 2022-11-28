@@ -31,4 +31,10 @@ $(document).ready(function () {
         $(this).siblings('label').removeClass('isselected')
         $(this).addClass('isselected');
     });
+
+    $(document).on('click', '.descP', function () {
+        $(this).next().toggleClass('opened');
+
+        $('.descP').html() == 'Bağla' ? $('.descP').html('Ölkələr haqqda') : $('.descP').html('Bağla')
+    })
 });

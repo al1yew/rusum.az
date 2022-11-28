@@ -386,14 +386,13 @@ input::-webkit-inner-spin-button {
 
 #main {
     background-color: #f4f4f4de;
-    margin-top: 50px;
 
     .all {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        padding: 40px 0;
+        padding-top: 100px;
         margin: 0;
 
         .headp {
@@ -485,6 +484,54 @@ input::-webkit-inner-spin-button {
                     background-color: white;
                     color: black;
                     cursor: pointer;
+                }
+            }
+
+            .description {
+                font-size: 16px;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                border: 0.5px solid red;
+                border-radius: 5px;
+                padding: 4.5px 0;
+                cursor: pointer;
+                position: relative;
+
+                .closed {
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: 0.2s;
+                    top: 10px;
+                }
+
+                .opened {
+                    visibility: visible;
+                    top: 40px;
+                    transition: 0.2s;
+                    opacity: 1;
+                }
+
+                .openDesc {
+                    width: 210%;
+                    height: fit-content;
+                    position: absolute;
+                    left: -109%;
+                    transition: 0.2s;
+                    background-color: white;
+                    border: 0.8px solid black;
+                    border-radius: 5px;
+                    padding: 10px;
+                    font-size: 13px;
+
+                    a {
+                        color: blue;
+                        text-decoration: none;
+                        margin: 0;
+                        padding: 0;
+                    }
                 }
             }
 
