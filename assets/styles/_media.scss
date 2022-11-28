@@ -79,6 +79,39 @@
                     font-size: 14px !important;
                 }
             }
+
+            .resultkeeper {
+                margin-top: 30px;
+                padding: 10px !important;
+
+                .result {
+                    font-size: 20px !important;
+                    margin-bottom: 15p !important;
+                }
+
+                ul {
+                    li {
+                        font-size: 14px !important;
+
+                        span {
+                            &:nth-child(2) {
+                                font-size: 16px !important;
+                            }
+                        }
+                    }
+                }
+
+                .overall {
+                    font-size: 14px !important;
+                    padding: 10px Impo !important;
+
+                    div {
+                        &:nth-child(2) {
+                            font-size: 18px !important;
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -124,6 +124,27 @@ input::-webkit-inner-spin-button {
   #main .all .form button {
     font-size: 14px !important;
   }
+  #main .all .resultkeeper {
+    margin-top: 30px;
+    padding: 10px !important;
+  }
+  #main .all .resultkeeper .result {
+    font-size: 20px !important;
+    margin-bottom: 15p !important;
+  }
+  #main .all .resultkeeper ul li {
+    font-size: 14px !important;
+  }
+  #main .all .resultkeeper ul li span:nth-child(2) {
+    font-size: 16px !important;
+  }
+  #main .all .resultkeeper .overall {
+    font-size: 14px !important;
+    padding: 10px Impo !important;
+  }
+  #main .all .resultkeeper .overall div:nth-child(2) {
+    font-size: 18px !important;
+  }
 }
 
 .col-1 {
@@ -491,6 +512,12 @@ input::-webkit-inner-spin-button {
             flex: 0 0 auto;
     width: 48.3333333%;
   }
+  .col-lg-5-9 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 49.1666%;
+  }
   .col-lg-6-5 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
@@ -536,7 +563,7 @@ input::-webkit-inner-spin-button {
 }
 
 #main {
-  background-color: #f4f4f4de;
+  background-color: #F7F8FC;
 }
 
 #main .all {
@@ -555,12 +582,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-#main .all .headp {
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-}
-
 #main .all .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -574,9 +595,9 @@ input::-webkit-inner-spin-button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-family: var(--robotomedium);
-  padding: 20px;
+  padding: 15px 20px;
   background-color: white;
-  border: 0.8px solid #a3a3a3;
+  border: 0.5px solid rgba(163, 163, 163, 0.308);
   border-radius: 10px;
 }
 
@@ -594,6 +615,10 @@ input::-webkit-inner-spin-button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+#main .all .form .inpkeeper:nth-child(1) {
+  padding-top: 0;
 }
 
 #main .all .form .inpkeeper p {
@@ -741,5 +766,98 @@ input::-webkit-inner-spin-button {
 
 #main .all .form button:hover {
   background-color: #006100;
+}
+
+#main .all .resultkeeper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: var(--robotomedium);
+  padding: 15px 20px;
+  background-color: white;
+  border: 0.5px solid rgba(163, 163, 163, 0.308);
+  border-radius: 10px;
+  font-family: var(--robotomedium);
+}
+
+#main .all .resultkeeper .result {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+#main .all .resultkeeper ul {
+  margin: 0;
+  padding: 0;
+  font-family: var(--robotolight);
+  list-style: circle;
+  width: 100%;
+}
+
+#main .all .resultkeeper ul li {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 0;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+#main .all .resultkeeper ul li span:nth-child(2) {
+  font-family: var(--robotomedium);
+  font-size: 18px;
+  color: green;
+}
+
+#main .all .resultkeeper .convertmoney {
+  text-align: end;
+  padding: 5px 0;
+  margin: 10px 0;
+  font-family: var(--robotomedium);
+  font-size: 16px;
+  color: green;
+}
+
+#main .all .resultkeeper .overall {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-family: var(--robotomedium);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+#main .all .resultkeeper .overall div:nth-child(2) {
+  text-align: end;
+  font-size: 24px;
+  color: green;
 }
 /*# sourceMappingURL=style.css.map */
