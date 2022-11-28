@@ -650,7 +650,7 @@ input::-webkit-inner-spin-button {
   border: 0.5px solid grey;
   border-radius: 5px;
   outline: none;
-  padding: 5px;
+  padding: 6px 5px;
   cursor: pointer;
   background-color: white;
   color: black;
@@ -662,6 +662,8 @@ input::-webkit-inner-spin-button {
   border-radius: 5px;
   outline: none;
   padding: 4px;
+  background-color: white;
+  color: black;
   cursor: pointer;
 }
 
