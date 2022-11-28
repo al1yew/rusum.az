@@ -652,6 +652,8 @@ input::-webkit-inner-spin-button {
   outline: none;
   padding: 5px;
   cursor: pointer;
+  background-color: white;
+  color: black;
 }
 
 #main .all .form .inpkeeper input[type="number"],
