@@ -15,33 +15,18 @@ p {
 }
 
 @font-face {
-    font-family: UnboundedBold;
-    src: url(../fonts/unbounded-main/TTF/Unbounded-Bold.woff2);
+    font-family: RobotoBold;
+    src: url(../fonts/roboto/Roboto-Bold.ttf);
 }
 
 @font-face {
-    font-family: UnboundedMedium;
-    src: url(../fonts/unbounded-main/TTF/Unbounded-Medium.woff2);
+    font-family: RobotoMedium;
+    src: url(../fonts/roboto/Roboto-Medium.ttf);
 }
 
 @font-face {
-    font-family: UnboundedLight;
-    src: url(../fonts/unbounded-main/TTF/Unbounded-Light.woff2);
-}
-
-@font-face {
-    font-family: UnboundedBlond;
-    src: url(../fonts/unbounded-main/TTF/Unbounded-Blond.woff2);
-}
-
-@font-face {
-    font-family: UnboundedRegular;
-    src: url(../fonts/unbounded-main/TTF/Unbounded-Regular.woff2);
-}
-
-@font-face {
-    font-family: UnboundedVariable;
-    src: url(../fonts/unbounded-main/TTF/Unbounded-Variable.woff2);
+    font-family: RobotoLight;
+    src: url(../fonts/roboto/Roboto-Light.ttf);
 }
 
 ::-webkit-scrollbar {
@@ -61,12 +46,9 @@ p {
 }
 
 :root {
-    --unboundedbold: UnboundedBold;
-    --unboundedlight: UnboundedLight;
-    --unboundedmedium: UnboundedMedium;
-    --unboundedblond: UnboundedBlond;
-    --unboundedregular: UnboundedRegular;
-    --unboundedvariable: UnboundedVariable;
+    --robotobold: RobotoBold;
+    --robotomedium: RobotoMedium;
+    --robotolight: RobotoLight;
 }
 
 //#region custom cols
@@ -360,11 +342,23 @@ p {
 
 //#endregion custom cols
 
-
 #header {
     width: 100%;
+    margin: 0;
     position: fixed;
     left: 0;
     top: 0;
-    margin: 0;
+    background-color: #E3F2FD;
+    box-shadow: 0px 2px 20px 1px #c9e8ff;
+    font-family: var(--robotomedium);
+
+    .all {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+        padding: 5px 0;
+
+    }
 }
