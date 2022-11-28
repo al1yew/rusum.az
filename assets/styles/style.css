@@ -82,11 +82,16 @@ input::-webkit-inner-spin-button {
   }
   #main .all .form .description {
     font-size: 14px !important;
-    margin-top: 44px !important;
-    padding: 3.7px 0 !important;
+    margin-top: 43px !important;
+    padding: 4.5px 0 !important;
   }
   #main .all .form .description .openDesc {
     font-size: 12px !important;
+  }
+  #main .all .form input[type="date"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 30px;
   }
   #main .all .form .inpkeeper {
     font-size: 13px !important;
@@ -692,16 +697,16 @@ input::-webkit-inner-spin-button {
 #main .all .form .description .closed {
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  top: 10px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  top: 20px;
 }
 
 #main .all .form .description .opened {
   visibility: visible;
   top: 40px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
   opacity: 1;
 }
 

@@ -503,14 +503,14 @@ input::-webkit-inner-spin-button {
                 .closed {
                     visibility: hidden;
                     opacity: 0;
-                    transition: 0.2s;
-                    top: 10px;
+                    transition: 0.1s;
+                    top: 20px;
                 }
 
                 .opened {
                     visibility: visible;
                     top: 40px;
-                    transition: 0.2s;
+                    transition: 0.1s;
                     opacity: 1;
                 }
 
