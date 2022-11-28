@@ -1,0 +1,11 @@
+:root {
+    --robotobold: RobotoBold;
+    --robotomedium: RobotoMedium;
+    --robotolight: RobotoLight;
+}
+
+@media(max-width: 576px) {
+    #header {
+        font-size: 12px !important;
+    }
+}

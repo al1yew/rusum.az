@@ -23,13 +23,13 @@
     <header id="header">
         <div class="container">
             <div class="row all">
-                <div class="col-lg-3 col-3">
-                    Idxal Rüsumunun hesablanması
+                <div class="col-lg-1-2 col-2">
+                    Rusum.az
                 </div>
-                <div class="col-lg-2 col-2 ">
+                <div class="col-lg-4 col-4 neseqoyariqheader">
                     nese qoyariq
                 </div>
-                <div class="col-lg-1-2 col-1-5">
+                <div class="col-lg-1-2 col-2">
                     <a href="https://garantauto.az/">
                         <img class="img-fluid" src="./assets/images/garantautologoCROP.png" alt="">
                     </a>
@@ -38,8 +38,44 @@
         </div>
     </header>
 
-    <main class="main">
+    <main id="main">
+        <div class="container">
+            <div class="row all">
+                <form class="col-lg-6 col-12 form">
+                    <p class="col-lg-12 col-12 headp">
+                        Nəqliyyat vasitəsinin məlumatları
+                    </p>
+                    <div class="col-lg-12 col-12 inpkeeper">
+                        <p class="col-lg-12 col-12">Nəqliyyat vasitəsinin növü:</p>
 
+                        <div class="col-lg-5-8 col-5-8 inplabelkeeper isselected">
+                            <label for="auto">Minik avtomobili</label>
+                            <input type="radio" checked id="auto" name="autoType">
+                        </div>
+
+                        <div class="col-lg-5-8 col-5-8 inplabelkeeper">
+                            <label for="bus">Avtobus</label>
+                            <input type="radio" id="bus" name="autoType">
+                        </div>
+                    </div>
+
+                    <label class="col-lg-12 col-12" for="engineType">Mühərrikin növü</label>
+                    <select class="col-lg-12 col-12" name="engineType" id="engineType">
+                        <option value="0">Seçin</option>
+                        <option value="1">Benzin</option>
+                        <option value="2">Dizel</option>
+                        <option value="3">Qaz</option>
+                        <option value="4">Hibrid-Benzin</option>
+                        <option value="5">Hibrid-Dizel</option>
+                        <option value="6">Elektrik</option>
+                    </select>
+                    
+                </form>
+                <div class="col-lg-6 col-12">
+                    results
+                </div>
+            </div>
+        </div>
     </main>
 
 

@@ -51,6 +51,10 @@ p {
     --robotolight: RobotoLight;
 }
 
+//#region imports
+@import 'media';
+//#endregion imports
+
 //#region custom cols
 
 .col-1 {
@@ -350,7 +354,8 @@ p {
     top: 0;
     background-color: #E3F2FD;
     box-shadow: 0px 2px 20px 1px #c9e8ff;
-    font-family: var(--robotomedium);
+    font-family: var(--robotobold);
+    font-size: 18px;
 
     .all {
         width: 100%;
@@ -358,7 +363,100 @@ p {
         justify-content: space-between;
         align-items: center;
         color: black;
+        margin: 0;
+        padding: 0;
         padding: 5px 0;
 
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        .neseqoyariqheader {
+            text-align: center;
+        }
+    }
+}
+
+#main {
+    background-color: #f4f4f4de;
+    margin-top: 50px;
+
+    .all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 40px 0;
+        margin: 0;
+
+        .headp {
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+        }
+
+        .form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            font-family: var(--robotomedium);
+            padding: 20px;
+            background-color: white;
+            border: 0.8px solid rgb(163, 163, 163);
+            border-radius: 10px;
+
+            .inpkeeper {
+                font-size: 16px;
+                padding: 20px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                p {
+                    margin-bottom: 10px;
+                }
+
+                label {
+                    font-family: var(--robotolight);
+                    cursor: pointer;
+                    transition: 0.1s;
+                }
+
+                input {
+                    display: none;
+                }
+
+                .inplabelkeeper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    padding: 4px 0;
+                    border: 0.5px solid grey;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: 0.1s;
+
+                    &:hover {
+                        background-color: green;
+                        color: white;
+
+                        label {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                .isselected {
+                    background-color: green;
+                    color: white;
+                }
+            }
+
+
+        }
     }
 }

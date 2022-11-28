@@ -52,6 +52,18 @@ p {
   --robotolight: RobotoLight;
 }
 
+:root {
+  --robotobold: RobotoBold;
+  --robotomedium: RobotoMedium;
+  --robotolight: RobotoLight;
+}
+
+@media (max-width: 576px) {
+  #header {
+    font-size: 12px !important;
+  }
+}
+
 .col-1 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -434,7 +446,8 @@ p {
   background-color: #E3F2FD;
   -webkit-box-shadow: 0px 2px 20px 1px #c9e8ff;
           box-shadow: 0px 2px 20px 1px #c9e8ff;
-  font-family: var(--robotomedium);
+  font-family: var(--robotobold);
+  font-size: 18px;
 }
 
 #header .all {
@@ -449,15 +462,128 @@ p {
       -ms-flex-align: center;
           align-items: center;
   color: black;
+  margin: 0;
+  padding: 0;
   padding: 5px 0;
 }
 
-#header .all .ikinci {
-  -ms-grid-column-align: end;
-      justify-self: end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  justify-tracks: end;
+#header .all div {
+  margin: 0;
+  padding: 0;
+}
+
+#header .all .neseqoyariqheader {
+  text-align: center;
+}
+
+#main {
+  background-color: #f4f4f4de;
+  margin-top: 50px;
+}
+
+#main .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 40px 0;
+  margin: 0;
+}
+
+#main .all .headp {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+#main .all .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: var(--robotomedium);
+  padding: 20px;
+  background-color: white;
+  border: 0.8px solid #a3a3a3;
+  border-radius: 10px;
+}
+
+#main .all .form .inpkeeper {
+  font-size: 16px;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#main .all .form .inpkeeper p {
+  margin-bottom: 10px;
+}
+
+#main .all .form .inpkeeper label {
+  font-family: var(--robotolight);
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#main .all .form .inpkeeper input {
+  display: none;
+}
+
+#main .all .form .inpkeeper .inplabelkeeper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 4px 0;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#main .all .form .inpkeeper .inplabelkeeper:hover {
+  background-color: green;
+  color: white;
+}
+
+#main .all .form .inpkeeper .inplabelkeeper:hover label {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#main .all .form .inpkeeper .isselected {
+  background-color: green;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
