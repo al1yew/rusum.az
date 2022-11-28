@@ -30,6 +30,12 @@ p {
   src: url(../fonts/roboto/Roboto-Light.ttf);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -524,7 +530,7 @@ p {
 
 #main .all .form .inpkeeper {
   font-size: 16px;
-  padding: 20px 0;
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,10 +544,6 @@ p {
       flex-wrap: wrap;
 }
 
-#main .all .form .inpkeeper p {
-  margin-bottom: 10px;
-}
-
 #main .all .form .inpkeeper label {
   font-family: var(--robotolight);
   cursor: pointer;
@@ -549,7 +551,7 @@ p {
   transition: 0.1s;
 }
 
-#main .all .form .inpkeeper input {
+#main .all .form .inpkeeper input[type="radio"] {
   display: none;
 }
 

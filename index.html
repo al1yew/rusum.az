@@ -41,36 +41,57 @@
     <main id="main">
         <div class="container">
             <div class="row all">
-                <form class="col-lg-6 col-12 form">
+                <form class="col-lg-6 col-12 form" id="mainForm" method="post">
                     <p class="col-lg-12 col-12 headp">
                         Nəqliyyat vasitəsinin məlumatları
                     </p>
                     <div class="col-lg-12 col-12 inpkeeper">
                         <p class="col-lg-12 col-12">Nəqliyyat vasitəsinin növü:</p>
 
-                        <div class="col-lg-5-8 col-5-8 inplabelkeeper isselected">
-                            <label for="auto">Minik avtomobili</label>
-                            <input type="radio" checked id="auto" name="autoType">
-                        </div>
+                        <label for="auto" class="col-lg-5-8 col-5-8 inplabelkeeper isselected">
+                            <span>Minik avtomobili</span>
+                            <input type="radio" checked id="auto" name="autoType" value="auto">
+                        </label>
 
-                        <div class="col-lg-5-8 col-5-8 inplabelkeeper">
-                            <label for="bus">Avtobus</label>
-                            <input type="radio" id="bus" name="autoType">
-                        </div>
+                        <label for="bus" class="col-lg-5-8 col-5-8 inplabelkeeper">
+                            <span>Avtobus</span>
+                            <input type="radio" id="bus" name="autoType" value="bus">
+                        </label>
                     </div>
 
-                    <label class="col-lg-12 col-12" for="engineType">Mühərrikin növü</label>
-                    <select class="col-lg-12 col-12" name="engineType" id="engineType">
-                        <option value="0">Seçin</option>
-                        <option value="1">Benzin</option>
-                        <option value="2">Dizel</option>
-                        <option value="3">Qaz</option>
-                        <option value="4">Hibrid-Benzin</option>
-                        <option value="5">Hibrid-Dizel</option>
-                        <option value="6">Elektrik</option>
-                    </select>
-                    
+                    <div class="col-lg-12 col-12 inpkeeper">
+                        <p class="col-lg-12 col-12">Mühərrikin növü:</p>
+                        <select class="col-lg-12 col-12" name="engineType" id="engineType">
+                            <option value="0">Seçin</option>
+                            <option value="1">Benzin</option>
+                            <option value="2">Dizel</option>
+                            <option value="3">Qaz</option>
+                            <option value="4">Hibrid-Benzin</option>
+                            <option value="5">Hibrid-Dizel</option>
+                            <option value="6">Elektrik</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-5-8 col-5-8 inpkeeper">
+                        <p class="col-lg-12 col-12">Avtomobilin gömrük dəyəri ($):</p>
+                        <input type="number" class="col-lg-12 col-12" name="price">
+                    </div>
+
+                    <div class="col-lg-5-8 col-5-8 inpkeeper">
+                        <p class="col-lg-12 col-12">Mühərrikin həcmi (sm&sup3;):</p>
+                        <input type="number" class="col-lg-12 col-12" name="volume">
+                    </div>
+
+                    <div class="col-lg-5-8 col-5-8 inpkeeper">
+                        <p class="col-lg-12 col-12">Mühərrikin həcmi (sm&sup3;):</p>
+                        <input type="number" class="col-lg-12 col-12" name="volume">
+                    </div>
+
+                    <button type="submit" form="mainForm">Hesabla</button>
                 </form>
+
+
+
                 <div class="col-lg-6 col-12">
                     results
                 </div>
@@ -86,10 +107,6 @@
     <!-- JQUERY  -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <!-- Ion icons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/6.0.4/esm/ionicons.min.js"
-        integrity="sha512-J4LkJr/AeK/KXjqkfb/65C4jzT4gG7BDqH9OtiOzCmULhWdKGppS3dCCzo0bmFULnZkajr4esopJYYLOLzuznw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- My JS -->
     <script src="./assets/scripts/main.js"></script>
 </body>
