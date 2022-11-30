@@ -42,6 +42,28 @@
                 .inpkeeper {
                     font-size: 13px !important;
 
+                    .infoicon {
+
+                        .showinfoprice {
+                            opacity: 1 !important;
+                            visibility: visible !important;
+                        }
+
+                        &:hover {
+                            span {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+
+                        span {
+                            width: 140px !important;
+                            font-size: 12px !important;
+                            opacity: 0 !important;
+                            visibility: hidden !important;
+                        }
+                    }
+
                     p {
                         font-size: 13px !important;
                     }

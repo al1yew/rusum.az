@@ -65,10 +65,6 @@ $(document).ready(function () {
         let elektrongomrukedv = elektrongomruk * 0.18; //5.4
 
         if (autoType == "auto") {
-            //elektrik sechilende volume 0 olsun input baglansin
-            //input onhover border versin on focus border versin ili shadow
-            //toastr podklcucit
-            //telefonda scroll elesin ashaga
 
             //#region idxal rusumu
 
@@ -226,6 +222,24 @@ $(document).ready(function () {
         $('.descP').html() == 'Bağla' ? $('.descP').html('Ölkələr haqqda') : $('.descP').html('Bağla')
     })
 
+    $(document).on('change', '#engineType', function () {
+        if ($(this).val() == "elektrik") {
+            $('#volume').attr("readonly", "true")
+            $('#volume').val(0)
+            $('#volume').addClass('inputReadonly')
+        }
+        else {
+            $('#volume').removeAttr('readonly')
+            $('#volume').val("")
+            $('#volume').removeClass('inputReadonly')
+        }
+    })
+
+    $(document).on('click', '.infoicon', function () {
+        if ($(window).width() < 576) {
+            $(this).find('span').toggleClass('showinfoprice')
+        }
+    })
 
 
 });

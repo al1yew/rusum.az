@@ -417,6 +417,50 @@ input::-webkit-inner-spin-button {
                 justify-content: space-between;
                 align-items: center;
                 flex-wrap: wrap;
+                position: relative;
+
+                .infoicon {
+                    position: absolute;
+                    right: 0%;
+                    top: 28%;
+                    text-align: end;
+                    z-index: 5;
+
+                    &:hover {
+                        span {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+
+                    i {
+                        font-size: 20px;
+                        color: green;
+                        cursor: pointer;
+                    }
+
+                    span {
+                        position: absolute;
+                        opacity: 0;
+                        visibility: hidden;
+                        top: 100%;
+                        right: 0%;
+                        font-size: 13px;
+                        text-align: center;
+                        color: black;
+                        background-color: white;
+                        font-family: var(--robotomedium);
+                        line-height: 16px;
+                        box-shadow: 0px 0px 10px 1px green;
+                        border: 0.5px solid grey;
+                        border-radius: 5px;
+                        width: 165px;
+                        padding: 3px;
+                        height: fit-content;
+                        transition: 0.2s;
+                        display: block;
+                    }
+                }
 
                 &:nth-child(1) {
                     padding-top: 0;
@@ -475,6 +519,19 @@ input::-webkit-inner-spin-button {
                     cursor: pointer;
                     background-color: white;
                     color: black;
+                    transition: 0.2s;
+
+                    &:focus {
+                        box-shadow: 0px 0px 3px 1px green;
+                    }
+
+                    &:hover {
+                        border: 1px solid black;
+                    }
+                }
+
+                .inputReadonly {
+                    background-color: rgba(128, 128, 128, 0.5) !important;
                 }
 
                 input[type="number"],
@@ -486,6 +543,15 @@ input::-webkit-inner-spin-button {
                     background-color: white;
                     color: black;
                     cursor: pointer;
+                    transition: 0.2s;
+
+                    &:focus {
+                        box-shadow: 0px 0px 3px 1px green;
+                    }
+
+                    &:hover {
+                        border: 1px solid black;
+                    }
                 }
             }
 

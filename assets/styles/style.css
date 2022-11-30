@@ -99,6 +99,20 @@ input::-webkit-inner-spin-button {
   #main .all .form .inpkeeper {
     font-size: 13px !important;
   }
+  #main .all .form .inpkeeper .infoicon .showinfoprice {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  #main .all .form .inpkeeper .infoicon:hover span {
+    opacity: 1;
+    visibility: visible;
+  }
+  #main .all .form .inpkeeper .infoicon span {
+    width: 140px !important;
+    font-size: 12px !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
   #main .all .form .inpkeeper p {
     font-size: 13px !important;
   }
@@ -629,6 +643,52 @@ input::-webkit-inner-spin-button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
+}
+
+#main .all .form .inpkeeper .infoicon {
+  position: absolute;
+  right: 0%;
+  top: 28%;
+  text-align: end;
+  z-index: 5;
+}
+
+#main .all .form .inpkeeper .infoicon:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+
+#main .all .form .inpkeeper .infoicon i {
+  font-size: 20px;
+  color: green;
+  cursor: pointer;
+}
+
+#main .all .form .inpkeeper .infoicon span {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 100%;
+  right: 0%;
+  font-size: 13px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  font-family: var(--robotomedium);
+  line-height: 16px;
+  -webkit-box-shadow: 0px 0px 10px 1px green;
+          box-shadow: 0px 0px 10px 1px green;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  width: 165px;
+  padding: 3px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  display: block;
 }
 
 #main .all .form .inpkeeper:nth-child(1) {
@@ -697,6 +757,21 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
   background-color: white;
   color: black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#main .all .form .inpkeeper select:focus {
+  -webkit-box-shadow: 0px 0px 3px 1px green;
+          box-shadow: 0px 0px 3px 1px green;
+}
+
+#main .all .form .inpkeeper select:hover {
+  border: 1px solid black;
+}
+
+#main .all .form .inpkeeper .inputReadonly {
+  background-color: rgba(128, 128, 128, 0.5) !important;
 }
 
 #main .all .form .inpkeeper input[type="number"],
@@ -708,6 +783,19 @@ input::-webkit-inner-spin-button {
   background-color: white;
   color: black;
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#main .all .form .inpkeeper input[type="number"]:focus,
+#main .all .form .inpkeeper input[type="date"]:focus {
+  -webkit-box-shadow: 0px 0px 3px 1px green;
+          box-shadow: 0px 0px 3px 1px green;
+}
+
+#main .all .form .inpkeeper input[type="number"]:hover,
+#main .all .form .inpkeeper input[type="date"]:hover {
+  border: 1px solid black;
 }
 
 #main .all .form .description {
