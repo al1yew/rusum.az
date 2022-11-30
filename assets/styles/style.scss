@@ -584,6 +584,7 @@ input::-webkit-inner-spin-button {
                 }
 
                 .openDesc {
+                    z-index: 300;
                     width: 210%;
                     height: fit-content;
                     position: absolute;

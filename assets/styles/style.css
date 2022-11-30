@@ -837,6 +837,7 @@ input::-webkit-inner-spin-button {
 }
 
 #main .all .form .description .openDesc {
+  z-index: 300;
   width: 210%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
