@@ -658,6 +658,8 @@ input::-webkit-inner-spin-button {
 #main .all .form .inpkeeper .infoicon:hover span {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 #main .all .form .inpkeeper .infoicon i {
