@@ -768,7 +768,7 @@ input::-webkit-inner-spin-button {
 }
 
 #main .all .form .inpkeeper select:hover {
-  border: 1px solid black;
+  border: 0.5px solid black;
 }
 
 #main .all .form .inpkeeper .inputReadonly {
