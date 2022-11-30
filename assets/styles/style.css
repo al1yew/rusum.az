@@ -796,7 +796,7 @@ input::-webkit-inner-spin-button {
 
 #main .all .form .inpkeeper input[type="number"]:hover,
 #main .all .form .inpkeeper input[type="date"]:hover {
-  border: 1px solid black;
+  border: 0.5px solid black;
 }
 
 #main .all .form .description {
