@@ -13,6 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="icon" href="./assets/images/garantautologoCROP.png">
+    <link rel="stylesheet" href="./node_modules/toastr/build/toastr.min.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
 
     <title>İdxal olunmuş avtomobillərin rüsumunun hesablanması</title>
@@ -53,12 +54,12 @@
                         <p class="col-lg-12 col-12">Mühərrikin növü:</p>
                         <select class="col-lg-12 col-12" name="engineType" id="engineType">
                             <option value="0">Seçin</option>
-                            <option value="1">Benzin</option>
-                            <option value="2">Dizel</option>
-                            <option value="3">Qaz</option>
-                            <option value="4">Hibrid-Benzin</option>
-                            <option value="5">Hibrid-Dizel</option>
-                            <option value="6">Elektrik</option>
+                            <option value="benzin">Benzin</option>
+                            <option value="dizel">Dizel</option>
+                            <option value="qaz">Qaz</option>
+                            <option value="hibrid-benzin">Hibrid-Benzin</option>
+                            <option value="hibrid-dizel">Hibrid-Dizel</option>
+                            <option value="elektrik">Elektrik</option>
                         </select>
                     </div>
 
@@ -132,53 +133,50 @@
                     <ul>
                         <li>
                             <span>İdxal gömrük rüsumu</span>
-                            <span>5100 AZN</span>
+                            <span class="idxalresult">0 AZN</span>
                         </li>
                         <li>
                             <span>ƏDV</span>
-                            <span>6093 AZN</span>
+                            <span class="edvresult">0 AZN</span>
                         </li>
                         <li>
                             <span>Gömrük yığımları</span>
-                            <span>120 AZN</span>
+                            <span class="gomrukyigimlariresult">0 AZN</span>
                         </li>
                         <li>
                             <span>Aksiz vergisi</span>
-                            <span>3100 AZN</span>
+                            <span class="aksizresult">0 AZN</span>
                         </li>
                         <li>
                             <span>Vəsiqə haqqı</span>
-                            <span>30 AZN</span>
+                            <span class="vesiqehaqqiresult">0 AZN</span>
                         </li>
                         <li>
                             <span>Elektron gömrük xidməti haqqı</span>
-                            <span>30 AZN</span>
+                            <span class="elektrongomrukresult">0 AZN</span>
                         </li>
                         <li>
                             <span>Elektron gömrük xidməti üzrə ƏDV</span>
-                            <span>5.4 AZN</span>
+                            <span class="elektrongomrukedvresult">0 AZN</span>
                         </li>
                     </ul>
 
                     <p class="convertmoney col-lg-12 col-12">1 USD = 1.7 AZN</p>
 
                     <div class="overall">
-                        <div class="col-lg-7 col-7">Cəmi gömrük ödənişləri:</div>
-                        <div class="col-lg-4 col-4">14478.4 AZN</div>
+                        <div class="col-lg-6 col-6">Cəmi gömrük ödənişləri:</div>
+                        <div class="col-lg-6 col-6 overallAZN">0 AZN</div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-
-    <footer id="footer">
-
-    </footer>
-
     <!-- JQUERY  -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Toastr -->
+    <script src="./node_modules/toastr/build/toastr.min.js"></script>
     <!-- My JS -->
     <script src="./assets/scripts/main.js"></script>
 </body>
