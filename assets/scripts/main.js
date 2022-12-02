@@ -1,4 +1,3 @@
-
 toastr.options = {
     hideDuration: 300,
     timeOut: 2500,
@@ -15,12 +14,11 @@ toastr.options = {
     "hideMethod": "fadeOut"
 }
 
-//esli data bolshe chem segodnashnaya error ili mojet est attribut
-
 $(document).ready(function () {
 
     if ($(document).width() < 576) {
         $('.resultkeeper').hide()
+        $('.advert').attr('href', 'https://www.instagram.com/garantauto.az/')
     }
 
     $(document).on('submit', '#mainForm', function (e) {
@@ -37,26 +35,26 @@ $(document).ready(function () {
         let date = new Date(selectedDate);
         let currency = 1.7;
 
-        if (engineType == 0 || price.length <= 0 || volume.length <= 0 || selectedDate.length == 0) {
+        if (engineType == 0 || price.length <= 0 || volume.length <= 0 || selectedDate.length == 0 || today.getTime() < date.getTime()) {
 
             if (engineType == 0) {
-                toastr.warning('Mühərrikin növü seçilməlidir!')
+                toastr.error('Mühərrikin növü seçilməlidir!')
             }
 
             if (price <= 0) {
-                toastr.warning('Gömrük dəyəri doldurulmalıdır!')
+                toastr.error('Gömrük dəyəri doldurulmalıdır!')
             }
 
             if (volume <= 0) {
-                toastr.warning('Mühərrikin həcmi doldurulmalıdır!')
+                toastr.error('Mühərrikin həcmi doldurulmalıdır!')
             }
 
             if (selectedDate.length == 0) {
-                toastr.warning('Istehsal tarixi seçilməlidir!')
+                toastr.error('Istehsal tarixi seçilməlidir!')
             }
 
-            if (today > date) {
-                toastr.warning('Istehsal tarixi səhvdir!')
+            if (today.getTime() < date.getTime()) {
+                toastr.error('Istehsal tarixi səhvdir!')
             }
 
             return;
