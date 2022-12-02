@@ -42,7 +42,7 @@
                         <p class="col-lg-12 col-12">Nəqliyyat vasitəsinin növü:</p>
 
                         <label for="auto" class="col-lg-5-8 col-5-8 inplabelkeeper isselected">
-                            <span>Minik avtomobili</span>
+                            <span>Minik</span>
                             <input type="radio" checked id="auto" name="autoType" value="auto">
                         </label>
 
@@ -79,23 +79,9 @@
                         <input inputmode="numeric" type="number" class="col-lg-12 col-12" name="volume" id="volume">
                     </div>
 
-                    <!-- <div class="col-lg-12 col-12 inpkeeper">
-                        <p class="col-lg-12 col-12">Istehsal tarixi:</p>
-
-                        <label for="more" class="col-lg-5-8 col-5-8 inplabelkeeper isselected">
-                            <span>1 ildən artıq</span>
-                            <input type="radio" checked id="more" name="date" value="more">
-                        </label>
-
-                        <label for="less" class="col-lg-5-8 col-5-8 inplabelkeeper">
-                            <span>1 ildən az</span>
-                            <input type="radio" id="less" name="date" value="less">
-                        </label>
-                    </div> -->
-
                     <div class="col-lg-5-8 col-5-8 inpkeeper">
                         <p class="col-lg-12 col-12">Istehsal tarixi:</p>
-                        <input type="date" class="col-lg-12 col-12" name="date">
+                        <input max="" type="date" class="col-lg-12 col-12" name="date" id="datepickerinp">
                     </div>
 
                     <div class="col-lg-5-8 col-5-8 description">
@@ -134,7 +120,7 @@
                     </a>
                 </div>
 
-                <div class="col-lg-5-9 col-12 resultkeeper">
+                <div class="col-lg-5-9 col-12 resultkeeper hidephone">
                     <p class="result col-lg-12 col-12">Nəticə:</p>
                     <ul>
                         <li>
@@ -160,6 +146,14 @@
                         <li>
                             <span>Elektron gömrük xidməti haqqı</span>
                             <span class="elektrongomrukresult">0 AZN</span>
+                        </li>
+                        <li>
+                            <span>Gömrük ekspertizası</span>
+                            <span class="gomrukekspertizasi">0 AZN</span>
+                        </li>
+                        <li>
+                            <span>Ekspertizası rüsumu</span>
+                            <span class="ekspertizarusumu">0 AZN</span>
                         </li>
                         <li>
                             <span>Elektron gömrük xidməti üzrə ƏDV</span>

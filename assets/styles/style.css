@@ -658,8 +658,6 @@ input::-webkit-inner-spin-button {
 #main .all .form .inpkeeper .infoicon:hover span {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 #main .all .form .inpkeeper .infoicon i {
@@ -932,7 +930,7 @@ input::-webkit-inner-spin-button {
   font-size: 24px;
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #main .all .resultkeeper ul {
@@ -956,7 +954,7 @@ input::-webkit-inner-spin-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 7px 0;
+  padding: 6px 0;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -969,8 +967,8 @@ input::-webkit-inner-spin-button {
 #main .all .resultkeeper .convertmoney {
   text-align: end;
   padding: 5px 0;
-  margin: 10px 0;
   font-family: var(--robotomedium);
+  margin: 2px 0;
   font-size: 16px;
   color: green;
 }
@@ -990,8 +988,7 @@ input::-webkit-inner-spin-button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 10px;
   border-top: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 

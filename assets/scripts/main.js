@@ -5,7 +5,7 @@ toastr.options = {
     positionClass: "toast-bottom-right",
     "closeButton": false,
     "debug": false,
-    "newestOnTop": false,
+    "newestOnTop": true,
     "progressBar": false,
     "preventDuplicates": false,
     "onclick": null,
@@ -15,7 +15,13 @@ toastr.options = {
     "hideMethod": "fadeOut"
 }
 
+//esli data bolshe chem segodnashnaya error ili mojet est attribut
+
 $(document).ready(function () {
+
+    if ($(document).width() < 576) {
+        $('.resultkeeper').hide()
+    }
 
     $(document).on('submit', '#mainForm', function (e) {
         e.preventDefault();
@@ -23,46 +29,51 @@ $(document).ready(function () {
 
         let autoType = formData.get('autoType');
         let engineType = formData.get('engineType');
-        let price = parseInt(formData.get('price'));
-        let volume = parseInt(formData.get('volume'));
+        let price = formData.get('price');
+        let volume = formData.get('volume');
         let source = formData.get('source');
         let selectedDate = formData.get('date');
-        let date = new Date(selectedDate);
         const today = new Date;
+        let date = new Date(selectedDate);
         let currency = 1.7;
 
-        if (engineType == 0 || price.length == 0 || volume.length == 0 || selectedDate.length == 0) {
-            toastr.error('Xanaları doldurun!')
+        if (engineType == 0 || price.length <= 0 || volume.length <= 0 || selectedDate.length == 0) {
+
+            if (engineType == 0) {
+                toastr.warning('Mühərrikin növü seçilməlidir!')
+            }
+
+            if (price <= 0) {
+                toastr.warning('Gömrük dəyəri doldurulmalıdır!')
+            }
+
+            if (volume <= 0) {
+                toastr.warning('Mühərrikin həcmi doldurulmalıdır!')
+            }
+
+            if (selectedDate.length == 0) {
+                toastr.warning('Istehsal tarixi seçilməlidir!')
+            }
+
+            if (today > date) {
+                toastr.warning('Istehsal tarixi səhvdir!')
+            }
+
             return;
         }
 
-        if (engineType == 0) {
-            toastr.warning('Mühərrikin növü seçilməlidir!')
-            return;
-        }
+        price = parseInt(price);
+        volume = parseInt(volume);
 
-        if (price.length == 0) {
-            toastr.warning('Gömrük dəyəri seçilməlidir!')
-            return;
-        }
-
-        if (volume.length == 0) {
-            toastr.warning('Mühərrikin həcmi seçilməlidir!')
-            return;
-        }
-
-        if (selectedDate.length == 0) {
-            toastr.warning('Istehsal tarixi seçilməlidir!')
-            return;
-        }
-
-        let idxal;
-        let aksiz;
-        let edv;
-        let gomrukyigimi;
-        let vesigehaqqi = 30;
-        let elektrongomruk = 30;
-        let elektrongomrukedv = elektrongomruk * 0.18; //5.4
+        let idxal,
+            aksiz,
+            edv,
+            gomrukyigimi,
+            vesigehaqqi = 30,
+            elektrongomruk = 30,
+            elektrongomrukedv = elektrongomruk * 0.18,
+            gomrukekspertizasi = 30,
+            ekspertizarusumu = 30;
 
         if (autoType == "auto") {
 
@@ -190,6 +201,14 @@ $(document).ready(function () {
 
             //#endregion edv
 
+            //#region gomruk ekspertizasi ve rusumu
+
+            if ((today - date) / 1000 / 60 / 60 / 24 / 365 < 1) {
+                ekspertizarusumu = 0;
+            }
+
+            //#endregion gomruk ekspertizasi ve rusumu
+
             $('.idxalresult').html(`${idxal.toFixed(2)} AZN`)
             $('.edvresult').html(`${edv.toFixed(2)} AZN`)
             $('.gomrukyigimlariresult').html(`${gomrukyigimi.toFixed(2)} AZN`)
@@ -197,12 +216,17 @@ $(document).ready(function () {
             $('.vesiqehaqqiresult').html(`${vesigehaqqi.toFixed(2)} AZN`)
             $('.elektrongomrukresult').html(`${elektrongomruk.toFixed(2)} AZN`)
             $('.elektrongomrukedvresult').html(`${elektrongomrukedv.toFixed(2)} AZN`)
+            $('.gomrukekspertizasi').html(`${gomrukekspertizasi.toFixed(2)} AZN`)
+            $('.ekspertizarusumu').html(`${ekspertizarusumu.toFixed(2)} AZN`)
 
             $('.overallAZN').html(`${(idxal + edv + gomrukyigimi + aksiz + vesigehaqqi + elektrongomruk + elektrongomrukedv).toFixed(2)} AZN`)
 
             if ($(window).width() < 576) {
+
+                $('.resultkeeper').fadeIn()
                 $(document).scrollTop(800)
             }
+
 
         }
         else if (autoType == "bus") {
@@ -230,7 +254,6 @@ $(document).ready(function () {
         }
         else {
             $('#volume').removeAttr('readonly')
-            $('#volume').val("")
             $('#volume').removeClass('inputReadonly')
         }
     })
