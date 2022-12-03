@@ -43,7 +43,7 @@
 
                         <label for="auto" class="col-lg-12 col-12 inplabelkeeper isselected">
                             <span>Minik</span>
-                            <input type="radio" checked id="auto" name="autoType" value="auto">
+                            <input required type="radio" checked id="auto" name="autoType" value="auto">
                         </label>
 
                         <!-- <label for="bus" class="col-lg-5-8 col-5-8 inplabelkeeper">
@@ -67,7 +67,8 @@
 
                     <div class="col-lg-5-8 col-5-8 inpkeeper">
                         <p class="col-lg-10 col-10">Gömrük dəyəri ($):</p>
-                        <input inputmode="numeric" type="number" class="col-lg-12 col-12" name="price" id="price">
+                        <input required inputmode="numeric" type="number" class="col-lg-12 col-12" name="price"
+                            id="price">
                         <div class="infoicon col-lg-2 col-2">
                             <i class="fa-solid fa-circle-info"></i>
                             <span>Avtomobilin alış qiyməti, daşınma xərcləri, vergilər, rüsumlar daxil</span>
@@ -76,12 +77,13 @@
 
                     <div class="col-lg-5-8 col-5-8 inpkeeper">
                         <p class="col-lg-12 col-12">Mühərrikin həcmi (sm&sup3;):</p>
-                        <input inputmode="numeric" type="number" class="col-lg-12 col-12" name="volume" id="volume">
+                        <input required inputmode="numeric" type="number" class="col-lg-12 col-12" name="volume"
+                            id="volume">
                     </div>
 
                     <div class="col-lg-5-8 col-5-8 inpkeeper">
                         <p class="col-lg-12 col-12">Istehsal tarixi:</p>
-                        <input max="" type="date" class="col-lg-12 col-12" name="date" id="datepickerinp">
+                        <input required max="" type="date" class="col-lg-12 col-12" name="date" id="datepickerinp">
                     </div>
 
                     <div class="col-lg-5-8 col-5-8 description">
