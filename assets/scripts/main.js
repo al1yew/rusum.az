@@ -20,7 +20,7 @@ $(document).ready(function () {
         $('.resultkeeper').hide()
         $('.advert').attr('href', 'https://www.instagram.com/garantauto.az/')
     }
-    
+
     $(document).on('submit', '#mainForm', function (e) {
         e.preventDefault();
         const formData = new FormData(e.target);
@@ -35,7 +35,7 @@ $(document).ready(function () {
         let date = new Date(selectedDate);
         let currency = 1.7;
 
-        if (engineType == 0 || price.length <= 0 || volume.length <= 0 || selectedDate.length == 0 || today.getTime() < date.getTime()) {
+        if (engineType == 0 || price <= 0 || (volume <= 0 && engineType != "elektrik") || selectedDate.length == 0 || today.getTime() < date.getTime()) {
 
             if (engineType == 0) {
                 toastr.error('Mühərrikin növü seçilməlidir!')
@@ -45,7 +45,7 @@ $(document).ready(function () {
                 toastr.error('Gömrük dəyəri doldurulmalıdır!')
             }
 
-            if (volume <= 0) {
+            if (volume <= 0 && engineType != "elektrik") {
                 toastr.error('Mühərrikin həcmi doldurulmalıdır!')
             }
 
