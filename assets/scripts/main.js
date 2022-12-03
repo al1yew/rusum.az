@@ -20,7 +20,7 @@ $(document).ready(function () {
         $('.resultkeeper').hide()
         $('.advert').attr('href', 'https://www.instagram.com/garantauto.az/')
     }
-
+    
     $(document).on('submit', '#mainForm', function (e) {
         e.preventDefault();
         const formData = new FormData(e.target);
