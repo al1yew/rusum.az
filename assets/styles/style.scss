@@ -436,7 +436,7 @@ input::-webkit-inner-spin-button {
 
                     i {
                         font-size: 20px;
-                        color: green;
+                        color: rgb(57, 78, 117);
                         cursor: pointer;
                     }
 
@@ -452,7 +452,7 @@ input::-webkit-inner-spin-button {
                         background-color: white;
                         font-family: var(--robotomedium);
                         line-height: 16px;
-                        box-shadow: 0px 0px 4px 1px green;
+                        box-shadow: 0px 0px 4px 1px rgb(57, 78, 117);
                         border: 0.5px solid grey;
                         border-radius: 5px;
                         width: 165px;
@@ -498,7 +498,7 @@ input::-webkit-inner-spin-button {
                     transition: 0.1s;
 
                     &:hover {
-                        background-color: green;
+                        background-color: rgb(57, 78, 117);
                         color: white;
 
                         label {
@@ -508,7 +508,7 @@ input::-webkit-inner-spin-button {
                 }
 
                 .isselected {
-                    background-color: green;
+                    background-color: rgb(57, 78, 117);
                     color: white;
                 }
 
@@ -523,7 +523,7 @@ input::-webkit-inner-spin-button {
                     transition: 0.2s;
 
                     &:focus {
-                        box-shadow: 0px 0px 3px 1px green;
+                        box-shadow: 0px 0px 3px 1px rgb(57, 78, 117);
                     }
 
                     &:hover {
@@ -547,7 +547,7 @@ input::-webkit-inner-spin-button {
                     transition: 0.2s;
 
                     &:focus {
-                        box-shadow: 0px 0px 3px 1px green;
+                        box-shadow: 0px 0px 3px 1px rgb(57, 78, 117);
                     }
 
                     &:hover {
@@ -607,7 +607,7 @@ input::-webkit-inner-spin-button {
 
             button {
                 margin-top: 15px;
-                background-color: green;
+                background-color: rgb(57, 78, 117);
                 transition: 0.1s;
                 color: white;
 
@@ -681,7 +681,7 @@ input::-webkit-inner-spin-button {
                         &:nth-child(2) {
                             font-family: var(--robotomedium);
                             font-size: 18px;
-                            color: green;
+                            color: rgb(57, 78, 117);
                         }
                     }
                 }
@@ -693,7 +693,7 @@ input::-webkit-inner-spin-button {
                 font-family: var(--robotomedium);
                 margin: 2px 0;
                 font-size: 16px;
-                color: green;
+                color: rgb(57, 78, 117);
             }
 
             .overall {
@@ -711,7 +711,7 @@ input::-webkit-inner-spin-button {
                     &:nth-child(2) {
                         text-align: end;
                         font-size: 24px;
-                        color: green;
+                        color: rgb(57, 78, 117);
                     }
                 }
             }

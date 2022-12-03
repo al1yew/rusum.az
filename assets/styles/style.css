@@ -662,7 +662,7 @@ input::-webkit-inner-spin-button {
 
 #main .all .form .inpkeeper .infoicon i {
   font-size: 20px;
-  color: green;
+  color: #394e75;
   cursor: pointer;
 }
 
@@ -678,8 +678,8 @@ input::-webkit-inner-spin-button {
   background-color: white;
   font-family: var(--robotomedium);
   line-height: 16px;
-  -webkit-box-shadow: 0px 0px 4px 1px green;
-          box-shadow: 0px 0px 4px 1px green;
+  -webkit-box-shadow: 0px 0px 4px 1px #394e75;
+          box-shadow: 0px 0px 4px 1px #394e75;
   border: 0.5px solid grey;
   border-radius: 5px;
   width: 165px;
@@ -736,7 +736,7 @@ input::-webkit-inner-spin-button {
 }
 
 #main .all .form .inpkeeper .inplabelkeeper:hover {
-  background-color: green;
+  background-color: #394e75;
   color: white;
 }
 
@@ -746,7 +746,7 @@ input::-webkit-inner-spin-button {
 }
 
 #main .all .form .inpkeeper .isselected {
-  background-color: green;
+  background-color: #394e75;
   color: white;
 }
 
@@ -763,8 +763,8 @@ input::-webkit-inner-spin-button {
 }
 
 #main .all .form .inpkeeper select:focus {
-  -webkit-box-shadow: 0px 0px 3px 1px green;
-          box-shadow: 0px 0px 3px 1px green;
+  -webkit-box-shadow: 0px 0px 3px 1px #394e75;
+          box-shadow: 0px 0px 3px 1px #394e75;
 }
 
 #main .all .form .inpkeeper select:hover {
@@ -790,8 +790,8 @@ input::-webkit-inner-spin-button {
 
 #main .all .form .inpkeeper input[type="number"]:focus,
 #main .all .form .inpkeeper input[type="date"]:focus {
-  -webkit-box-shadow: 0px 0px 3px 1px green;
-          box-shadow: 0px 0px 3px 1px green;
+  -webkit-box-shadow: 0px 0px 3px 1px #394e75;
+          box-shadow: 0px 0px 3px 1px #394e75;
 }
 
 #main .all .form .inpkeeper input[type="number"]:hover,
@@ -862,7 +862,7 @@ input::-webkit-inner-spin-button {
 
 #main .all .form button {
   margin-top: 15px;
-  background-color: green;
+  background-color: #394e75;
   -webkit-transition: 0.1s;
   transition: 0.1s;
   color: white;
@@ -961,7 +961,7 @@ input::-webkit-inner-spin-button {
 #main .all .resultkeeper ul li span:nth-child(2) {
   font-family: var(--robotomedium);
   font-size: 18px;
-  color: green;
+  color: #394e75;
 }
 
 #main .all .resultkeeper .convertmoney {
@@ -970,7 +970,7 @@ input::-webkit-inner-spin-button {
   font-family: var(--robotomedium);
   margin: 2px 0;
   font-size: 16px;
-  color: green;
+  color: #394e75;
 }
 
 #main .all .resultkeeper .overall {
@@ -995,6 +995,6 @@ input::-webkit-inner-spin-button {
 #main .all .resultkeeper .overall div:nth-child(2) {
   text-align: end;
   font-size: 24px;
-  color: green;
+  color: #394e75;
 }
 /*# sourceMappingURL=style.css.map */
