@@ -103,13 +103,17 @@
                 }
             }
 
-            .reklam {
+            .reklam1 {
                 order: 2 !important;
+            }
+
+            .reklam2 {
+                order: 3 !important;
             }
 
             .resultkeeper {
                 padding: 10px !important;
-                order: 3 !important;
+                order: 4 !important;
 
                 .result {
                     font-size: 20px !important;

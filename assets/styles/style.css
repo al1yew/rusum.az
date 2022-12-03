@@ -141,16 +141,21 @@ input::-webkit-inner-spin-button {
   #main .all .form button {
     font-size: 14px !important;
   }
-  #main .all .reklam {
+  #main .all .reklam1 {
     -webkit-box-ordinal-group: 3 !important;
         -ms-flex-order: 2 !important;
             order: 2 !important;
   }
-  #main .all .resultkeeper {
-    padding: 10px !important;
+  #main .all .reklam2 {
     -webkit-box-ordinal-group: 4 !important;
         -ms-flex-order: 3 !important;
             order: 3 !important;
+  }
+  #main .all .resultkeeper {
+    padding: 10px !important;
+    -webkit-box-ordinal-group: 5 !important;
+        -ms-flex-order: 4 !important;
+            order: 4 !important;
   }
   #main .all .resultkeeper .result {
     font-size: 20px !important;
@@ -872,10 +877,20 @@ input::-webkit-inner-spin-button {
   background-color: #006100;
 }
 
-#main .all .reklam {
+#main .all .reklam1 {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
+}
+
+#main .all .reklam2 {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+#main .all .reklam1,
+#main .all .reklam2 {
   border: 0.5px solid grey;
   border-radius: 10px;
   overflow: hidden;
@@ -893,13 +908,15 @@ input::-webkit-inner-spin-button {
   margin: 20px 0;
 }
 
-#main .all .reklam a {
+#main .all .reklam1 a,
+#main .all .reklam2 a {
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
-#main .all .reklam a img {
+#main .all .reklam1 a img,
+#main .all .reklam2 a img {
   width: 100%;
 }
 
