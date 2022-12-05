@@ -64,6 +64,20 @@
                         }
                     }
 
+                    .the-datepicker__container--responsive .the-datepicker__main {
+                        height: auto !important;
+                        width: auto !important;
+                    }
+
+                    .the-datepicker__container.the-datepicker__container--responsive {
+                        top: 35% !important;
+                        left: 12px !important;
+                    }
+
+                    .the-datepicker__top {
+                        display: block !important;
+                    }
+
                     p {
                         font-size: 13px !important;
                     }

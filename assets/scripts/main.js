@@ -21,6 +21,10 @@ $(document).ready(function () {
         $('.advert').attr('href', 'https://www.instagram.com/garantauto.az/')
     }
 
+    const input = document.getElementById('datepickerinput');
+    const datepicker = new TheDatepicker.Datepicker(input);
+    datepicker.render();
+
     $(document).on('submit', '#mainForm', function (e) {
         e.preventDefault();
         const formData = new FormData(e.target);
@@ -31,9 +35,20 @@ $(document).ready(function () {
         let volume = formData.get('volume');
         let source = formData.get('source');
         let selectedDate = formData.get('date');
+
+        let arrayOfDate = selectedDate.split('.')
+
+        const trimmedarray = arrayOfDate.map(ar => {
+            return ar.trim()
+        })
+
+        selectedDate = trimmedarray[2] + "-" + trimmedarray[1] + "-" + trimmedarray[0]
+
         const today = new Date;
         let date = new Date(selectedDate);
         let currency = 1.7;
+
+        console.log(date)
 
         if (engineType == 0 || price <= 0 || (volume <= 0 && engineType != "elektrik") || selectedDate.length == 0 || today.getTime() < date.getTime()) {
 
