@@ -1,0 +1,35 @@
+{
+  "name": "thedatepicker",
+  "version": "2.1.6",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thedatepicker/thedatepicker.git"
+  },
+  "main": "dist/the-datepicker.min.js",
+  "types": "dist/the-datepicker.d.ts",
+  "browser": "dist/the-datepicker.min.js",
+  "devDependencies": {
+    "stylus": "^0.58.1",
+    "typescript": "^4.9.3",
+    "uglify-js": "^3.17.4"
+  },
+  "scripts": {
+    "js": "tsc",
+    "css": "stylus src/assets -o dist",
+    "minify": "uglifyjs -c -m  --mangle-props regex=\"/_$/\" -o dist/the-datepicker.min.js dist/the-datepicker.js"
+  },
+  "bugs": {
+    "url": "https://github.com/thedatepicker/thedatepicker/issues"
+  },
+  "homepage": "https://github.com/thedatepicker/thedatepicker#readme",
+  "description": "TheDatepicker - Pure JavaScript Datepicker by Slevomat.cz",
+  "keywords": [
+    "date",
+    "datepicker"
+  ],
+  "author": {
+    "name": "Vladislav Hejda",
+    "url": "https://twitter.com/hejdav"
+  }
+}
