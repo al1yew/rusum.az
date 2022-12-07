@@ -14,8 +14,6 @@ toastr.options = {
     "hideMethod": "fadeOut"
 }
 
-
-
 $(document).ready(function () {
 
     $('#datepicker').datepicker({
@@ -40,7 +38,7 @@ $(document).ready(function () {
         let source = formData.get('source');
         let selectedDate = formData.get('date');
 
-        let arrayOfDate = selectedDate.split('.')
+        let arrayOfDate = selectedDate.split('/')
 
         const trimmedarray = arrayOfDate.map(ar => {
             return ar.trim()
@@ -51,8 +49,6 @@ $(document).ready(function () {
         const today = new Date;
         let date = new Date(selectedDate);
         let currency = 1.7;
-
-        console.log(date)
 
         if (engineType == 0 || price <= 0 || (volume <= 0 && engineType != "elektrik") || selectedDate.length == 0 || today.getTime() < date.getTime()) {
 
@@ -74,6 +70,11 @@ $(document).ready(function () {
 
             if (today.getTime() < date.getTime()) {
                 toastr.error('Istehsal tarixi səhvdir!')
+            }
+
+            if ($(document).width() < 576) {
+                $('.resultkeeper').hide()
+                $(document).scrollTop(0)
             }
 
             return;
