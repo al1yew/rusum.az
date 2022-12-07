@@ -932,7 +932,7 @@ input::-webkit-inner-spin-button {
           align-items: center;
   padding: 0;
   margin: 0;
-  margin: 20px 0;
+  margin-top: 20px;
 }
 
 #main .all .reklam1 a,
