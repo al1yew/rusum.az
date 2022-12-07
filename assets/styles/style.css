@@ -159,6 +159,7 @@ input::-webkit-inner-spin-button {
             order: 2 !important;
   }
   #main .all .reklam2 {
+    margin-bottom: 20px !important;
     -webkit-box-ordinal-group: 4 !important;
         -ms-flex-order: 3 !important;
             order: 3 !important;
