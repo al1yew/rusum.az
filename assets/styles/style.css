@@ -146,7 +146,8 @@ input::-webkit-inner-spin-button {
     font-size: 14px !important;
     -webkit-appearance: none;
   }
-  #main .all .form .inpkeeper input[type="number"] {
+  #main .all .form .inpkeeper input[type="number"],
+  #main .all .form .inpkeeper input[type="text"] {
     font-size: 14px !important;
   }
   #main .all .form button {
@@ -661,6 +662,18 @@ input::-webkit-inner-spin-button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative !important;
+}
+
+#main .all .form .inpkeeper .calendarknopka {
+  position: absolute;
+  top: 65%;
+  right: 5px;
+}
+
+#main .all .form .inpkeeper .calendarknopka i {
+  font-size: 22px;
+  color: #394e75;
+  cursor: pointer;
 }
 
 #main .all .form .inpkeeper .infoicon {

@@ -107,7 +107,8 @@
                         -webkit-appearance: none;
                     }
 
-                    input[type="number"] {
+                    input[type="number"],
+                    input[type="text"] {
                         font-size: 14px !important;
                     }
                 }

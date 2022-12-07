@@ -420,6 +420,18 @@ input::-webkit-inner-spin-button {
                 flex-wrap: wrap;
                 position: relative !important;
 
+                .calendarknopka {
+                    position: absolute;
+                    top: 65%;
+                    right: 5px;
+
+                    i {
+                        font-size: 22px;
+                        color: rgb(57, 78, 117);
+                        cursor: pointer;
+                    }
+                }
+
                 .infoicon {
                     position: absolute;
                     right: 0%;

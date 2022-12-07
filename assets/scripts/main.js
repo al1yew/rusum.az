@@ -14,16 +14,20 @@ toastr.options = {
     "hideMethod": "fadeOut"
 }
 
+
+
 $(document).ready(function () {
+
+    $('#datepicker').datepicker({
+        format: "dd/mm/yyyy",
+        autoclose: true,
+        container: ".date"
+    });
 
     if ($(document).width() < 576) {
         $('.resultkeeper').hide()
         $('.advert').attr('href', 'https://www.instagram.com/garantauto.az/')
     }
-
-    const input = document.getElementById('datepickerinput');
-    const datepicker = new TheDatepicker.Datepicker(input);
-    datepicker.render();
 
     $(document).on('submit', '#mainForm', function (e) {
         e.preventDefault();
