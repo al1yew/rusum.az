@@ -644,7 +644,7 @@ input::-webkit-inner-spin-button {
   font-family: var(--robotomedium);
   padding: 15px 20px;
   background-color: white;
-  border: 0.5px solid rgba(163, 163, 163, 0.308);
+  border: 0.5px solid #c0bfbf;
   border-radius: 10px;
 }
 
@@ -932,7 +932,7 @@ input::-webkit-inner-spin-button {
 
 #main .all .reklam1,
 #main .all .reklam2 {
-  border: 0.5px solid grey;
+  border: 0.5px solid #c0bfbf;
   border-radius: 10px;
   overflow: hidden;
   display: -webkit-box;
@@ -979,7 +979,7 @@ input::-webkit-inner-spin-button {
   font-family: var(--robotomedium);
   padding: 15px 20px;
   background-color: white;
-  border: 0.5px solid rgba(163, 163, 163, 0.308);
+  border: 0.5px solid #c0bfbf;
   border-radius: 10px;
   font-family: var(--robotomedium);
 }
