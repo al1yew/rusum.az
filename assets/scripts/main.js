@@ -209,7 +209,7 @@ $(document).ready(function () {
             if (((engineType == "hibrid-benzin" || engineType == "hibrid-dizel") &&
                 (today - date) / 1000 / 60 / 60 / 24 / 365 < 3 &&
                 volume <= 2500) ||
-                engineType == "electric") {
+                engineType == "elektrik") {
 
                 edv = gomrukyigimi * 0.18;
             }
