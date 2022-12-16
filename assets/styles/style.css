@@ -1055,4 +1055,35 @@ input::-webkit-inner-spin-button {
   font-size: 24px;
   color: #394e75;
 }
+
+#footer {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  font-family: var(--montmedium);
+  font-size: 16px;
+}
+
+#footer .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  padding: 5px 0;
+}
+
+#footer .all a {
+  text-align: center;
+  font-size: 14px;
+  color: #042268;
+  width: 100%;
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */
