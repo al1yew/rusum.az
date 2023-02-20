@@ -24,7 +24,7 @@ $(document).ready(function () {
 
     if ($(document).width() < 576) {
         $('.resultkeeper').hide()
-        $('.advert').attr('href', 'https://www.instagram.com/garantauto.az/')
+        $('.garantautoadvert').attr('href', 'https://www.instagram.com/garantauto.az/')
     }
 
     $(document).on('submit', '#mainForm', function (e) {
@@ -281,6 +281,4 @@ $(document).ready(function () {
             $(this).find('span').toggleClass('showinfoprice')
         }
     })
-
-
 });
