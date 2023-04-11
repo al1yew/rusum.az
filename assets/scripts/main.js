@@ -98,7 +98,6 @@ $(document).ready(function () {
             //#region idxal rusumu
 
             if (source == "contract") {
-
                 idxal = 0;
             }
             else if (source == "another") {
@@ -106,7 +105,12 @@ $(document).ready(function () {
                 switch (engineType) {
                     case "elektrik":
 
-                        idxal = price * currency * 0.15;
+                        if ((today - date) / 1000 / 60 / 60 / 24 / 365 > 3) {
+                            idxal = price * currency * 0.15;
+                        }
+                        else {
+                            idxal = 0
+                        }
                         break;
 
                     case "benzin":
@@ -141,6 +145,7 @@ $(document).ready(function () {
             //#endregion idxal rusumu
 
             //#region aksiz
+            //https://customs.gov.az/az/sahibkarlar-ucun/gomruk-odenisleri chetvertiy dokument
 
             var koeffForThreeYears = 0;
             var koeffForSevenYears = 1;
@@ -176,12 +181,12 @@ $(document).ready(function () {
             else if (volume > 4000 && volume <= 5000) {
 
                 var addition = 5;
-                aksiz = (18600 + ((volume - 4000) * (35 + addition * koeffForThreeYears))) * koeffForSevenYears;
+                aksiz = (20600 + ((volume - 4000) * (35 + addition * koeffForThreeYears))) * koeffForSevenYears;
             }
             else if (volume > 5000) {
 
                 var addition = 10;
-                aksiz = (53600 + ((volume - 5000) * (70 + addition * koeffForThreeYears))) * koeffForSevenYears;
+                aksiz = (60600 + ((volume - 5000) * (70 + addition * koeffForThreeYears))) * koeffForSevenYears;
             }
 
             //#endregion aksiz
@@ -208,13 +213,15 @@ $(document).ready(function () {
 
             if (((engineType == "hibrid-benzin" || engineType == "hibrid-dizel") &&
                 (today - date) / 1000 / 60 / 60 / 24 / 365 < 3 &&
-                volume <= 2500) ||
-                engineType == "elektrik") {
+                volume <= 2500)) {
 
                 edv = gomrukyigimi * 0.18;
             }
+            else if (engineType == "elektrik") {
+                edv = 0
+            }
             else {
-                edv = (idxal + aksiz + (price * currency) + gomrukyigimi + vesigehaqqi) * 0.18
+                edv = (idxal + aksiz + (price * currency)) * 0.18
             }
 
             //#endregion edv
@@ -237,7 +244,7 @@ $(document).ready(function () {
             $('.gomrukekspertizasi').html(`${gomrukekspertizasi.toFixed(2)} AZN`)
             $('.ekspertizarusumu').html(`${ekspertizarusumu.toFixed(2)} AZN`)
 
-            $('.overallAZN').html(`${(idxal + edv + gomrukyigimi + aksiz + vesigehaqqi + elektrongomruk + elektrongomrukedv).toFixed(2)} AZN`)
+            $('.overallAZN').html(`${(idxal + edv + gomrukyigimi + aksiz + vesigehaqqi + elektrongomruk + elektrongomrukedv + ekspertizarusumu + gomrukekspertizasi).toFixed(2)} AZN`)
 
             if ($(window).width() < 576) {
 
